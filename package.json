@@ -1,0 +1,12 @@
+{
+  "name": "pre-react",
+  "version": "1.0.0",
+  "description": "Projeto de estudo pre react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "M Pinheiro",
+  "license": "ISC",
+  "type": "module"
+}
