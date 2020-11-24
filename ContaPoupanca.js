@@ -1,23 +1,9 @@
-import { Cliente } from './Cliente.js';
+export class ContaPoupanca{
 
-export class ContaCorrente{
-    set cliente(nVal){
-        if(nVal instanceof Cliente){
-            this._cliente = nVal;
-        }
-    }
-    get cliente(){
-        return this._cliente;
-    }
-
-    get saldo(){
-        return this._saldo;
-    }
-
-    constructor(agencia, cliente){
-        this.agencia = agencia;
+    constructor(saldoInicial, cliente, agencia){
+        this._saldo = saldoInicial;
         this._cliente = cliente;
-        this._saldo = 0;
+        this._agencia = agencia;
     }
 
     // Metodo para sacar
@@ -41,4 +27,4 @@ export class ContaCorrente{
         const valSacado = this.sacar(val);
         conta.deposito(valSacado);
     }
-};
+}
